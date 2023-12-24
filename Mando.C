@@ -195,7 +195,7 @@ void *hiloPublicacionZeros(void *data) {
         int rc = mosquitto_publish(datosHilo->mosq, NULL, "Rpi/Direc", strlen(direccion), direccion, 0, false);
 
         if (rc == MOSQ_ERR_SUCCESS) {
-            printf("Dirección publicada: %s\n", direccion);
+            printf("Dato publicado en Rpi/Direc: %s\n", direccion);
         } else {
             fprintf(stderr, "Error al publicar dirección: %s\n", mosquitto_strerror(rc));
         }
