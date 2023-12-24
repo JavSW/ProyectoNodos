@@ -164,7 +164,7 @@ void *hiloPublicacionAcelerometro(void *data) {
         }
 
         // Pausa antes de la próxima publicación
-        delay(1000);
+        delay(200);
     }
 
     return NULL;
@@ -201,7 +201,7 @@ void *hiloPublicacionZeros(void *data) {
         }
 
         // Pausa antes de la próxima publicación
-        delay(1000);
+        delay(200);
     }
 
     return NULL;
@@ -226,7 +226,7 @@ void *hiloPublicacionSens(void *data) {
         }
 
         // Pausa antes de la próxima publicación
-        delay(1000);
+        delay(200);
     }
 
     return NULL;
@@ -328,7 +328,7 @@ int main() {
         printf("Roll: %f\n", datosAcel.roll);
 
         // Pausa antes de la próxima lectura
-        delay(1000);
+        delay(200);
     }
 
     // Esperar a que los hilos terminen (esto nunca sucederá en este ejemplo)
